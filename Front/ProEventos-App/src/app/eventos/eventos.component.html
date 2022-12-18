@@ -1,0 +1,17 @@
+<p>Eventos de Components</p>
+<hr>
+<p>{{eventos[0].Tema}}</p>
+<p>{{eventos[0].Local}}</p>
+
+
+<div *ngFor="let item of eventos">
+  <hr>
+  <p>Id: {{item.eventoId}}</p>
+  <p>Data: {{item.dataEvento}}</p>
+  <p>Local: {{item.local}}</p>
+  <p>Tema: {{item.tema}}</p>
+  <p>Qtd Pessoas : {{item.qtdPessoas}}</p>
+  <p>Lote : {{item.lote}}</p>
+  <p>Imagem : {{item.imageURL}}</p>
+  <hr>
+</div>
