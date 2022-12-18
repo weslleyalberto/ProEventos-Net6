@@ -8,12 +8,12 @@ namespace ProEventos.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EventoController : ControllerBase
+    public class EventosController : ControllerBase
     {
         private readonly DataContext _context;
         const string error = "requisição inválida";
 
-        public EventoController(DataContext context)
+        public EventosController(DataContext context)
         {
             _context = context;
         }
